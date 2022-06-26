@@ -1,0 +1,24 @@
+{
+  "name": "car-rental-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^3.8.2",
+    "apollo-server-express": "^3.8.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "graphql": "^16.5.0",
+    "graphql-upload": "^15.0.1",
+    "mongodb": "^4.7.0",
+    "mongoose": "^6.3.6",
+    "stripe": "^9.8.0"
+  }
+}
