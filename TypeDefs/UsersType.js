@@ -57,7 +57,8 @@ const UsersType = gql`
         diffDays: String
         startDate: String
         endDate: String
-        licenseDate: String
+        licenseDate: String,
+        secretKey: String
     }
     type clientSecret {
         clientSecret: String

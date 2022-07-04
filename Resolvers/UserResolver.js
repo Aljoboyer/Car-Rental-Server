@@ -39,11 +39,11 @@ const UserResolver = {
             user.save()
         },
         AddBookings: async(parent, {input}) => {
+            console.log('data hitted', input.name)
             const booking = new bookingcollection(input)
             booking.save()
         },
         UpdateUserPorfile: async(parent, {input}) => {
-            console.log('hitted', input)
             const query = {_id: ObjectId(input.id)};
 
             const user = await usercollection.findOneAndUpdate(query, {
