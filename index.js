@@ -12,8 +12,6 @@ const { CarResolver } = require("./Resolvers/CarResolver.js");
 const { UsersType } = require("./TypeDefs/UsersType.js");
 const { UserResolver } = require("./Resolvers/UserResolver.js");
 
-const port = process.env.PORT || 4000;
-
 app.use(cors());
 app.use(graphqlUploadExpress());
 app.use(express.json({limit: '50mb'}));
@@ -30,7 +28,7 @@ async function startServer() {
 
     server.applyMiddleware({ app });
     
-    app.listen({port: port}, () => {
+    app.listen({port: process.env.PORT || 4000}, () => {
         console.log('🚀 Server ready port is http://localhost:4000');
     })
   
